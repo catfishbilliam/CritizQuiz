@@ -59,6 +59,19 @@ This project is organized to support clear roles for each file, making collabora
    - **Input Area**: Text input where users can type responses to questions, submit answers, and engage with the assistant.
    - **Send Button**: Triggers submission of user input and appends both the user’s message and the assistant’s response to the chat display.
 
+## Setting Up the OpenAI Assistant
+
+To use CritiQuiz with OpenAI's API, an assistant must be configured in OpenAI's API dashboard. Follow these steps:
+
+1. **Log in to OpenAI's API Dashboard** and navigate to the Assistants section.
+2. **Create a New Assistant** for CritiQuiz, configuring it to handle quiz and test-like interactions. Note the **Assistant ID** as it will be required for API calls.
+3. **Upload any required quiz or test files** to OpenAI’s dashboard and associate them with the assistant. These files provide additional context for the assistant to reference during conversations.
+4. In the project’s `.env` file, add the following environment variables:
+   ```bash
+   Qisra_API_KEY=your_openai_api_key
+   ASSISTANT_ID=your_assistant_id
+
+
 ## Getting Started
 
 ### Prerequisites
